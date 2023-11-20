@@ -2,6 +2,29 @@
   "name": "settings-dash",
   "private": false,
   "type": "module",
+  "description": "Another item added to the One Day collection. This time, a settings dashboard. I saw a design on dribble and decided to make my own version of it with the set of components I made for nuxt.",
+  "author": {
+    "name": "Behon Baker",
+    "email": "behon.baker@yahoo.com",
+    "url": "https://behonbaker.com/"
+  },
+  "license": "MIT",
+  "maintainers": [
+    {
+      "name": "Behon Baker",
+      "email": "behon.baker@yahoo.com",
+      "url": "https://behonbaker.com/"
+    }
+  ],
+  "keywords": [
+    "nuxt",
+    "tailwindcss",
+    "nuxt3",
+    "dashboard",
+    "settings",
+    "uithing"
+  ],
+  "icon": "./public/icon.svg",
   "scripts": {
     "build": "nuxt build",
     "dev": "nuxt dev --host",

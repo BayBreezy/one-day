@@ -8,7 +8,7 @@ Another item added to the One Day collection. This time, a settings dashboard. I
 - [Radix-Vue](https://www.radix-vue.com/)
 - [Nuxt i18n](https://v8.i18n.nuxtjs.org/)
 
-![Cover](/public/cover.png)
+![Cover](./public/cover.png)
 
 
 ## Getting Started
@@ -19,7 +19,7 @@ Another item added to the One Day collection. This time, a settings dashboard. I
 - Run the dev server
 
 ```bash
-git clone `link-to-repo`
+git clone https://github.com/BayBreezy/one-day.git
 cd settings-dash
 npm install
 npm run dev
