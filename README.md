@@ -23,3 +23,4 @@ Completed projects so far
 - [ETag UI](./etag-topup-ui/README.md)
   - This is a simple UI for the ETag Top-up website for Jamaica. The original website can be found here: https://atopup.h2k-jio.com/
   - ✨ Live: https://etag-ui.behonbaker.com/ ✨
+  - [![Netlify Status](https://api.netlify.com/api/v1/badges/a99e468e-97b5-4bd7-9efb-2a3240c97757/deploy-status)](https://app.netlify.com/sites/etag-ui/deploys)
