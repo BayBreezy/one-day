@@ -9,7 +9,7 @@
       </slot>
     </slot>
     <slot name="shortcut">
-      <UIDropdownMenuShortcut v-if="shortcut">{{ shortcut }}</UIDropdownMenuShortcut>
+      <UiDropdownMenuShortcut v-if="shortcut">{{ shortcut }}</UiDropdownMenuShortcut>
     </slot>
   </DropdownMenuItem>
 </template>

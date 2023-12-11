@@ -1,8 +1,8 @@
 <template>
   <SwitchRoot v-bind="forwarded" :class="styles({ class: props.class })">
-    <UISwitchThumb>
+    <UiSwitchThumb>
       <slot></slot>
-    </UISwitchThumb>
+    </UiSwitchThumb>
   </SwitchRoot>
 </template>
 

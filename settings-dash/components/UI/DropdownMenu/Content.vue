@@ -1,12 +1,12 @@
 <template>
-  <UIDropdownMenuPortal>
+  <UiDropdownMenuPortal>
     <DropdownMenuContent
       v-bind="{ ...forwarded, ...$attrs }"
       :class="styles({ class: props.class })"
     >
       <slot></slot>
     </DropdownMenuContent>
-  </UIDropdownMenuPortal>
+  </UiDropdownMenuPortal>
 </template>
 
 <script lang="ts" setup>

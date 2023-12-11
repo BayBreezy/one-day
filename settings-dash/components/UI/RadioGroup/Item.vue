@@ -1,7 +1,7 @@
 <template>
   <RadioGroupItem v-bind="props" :class="styles({ class: props.class })">
     <slot>
-      <UIRadioGroupIndicator :icon="props.icon" />
+      <UiRadioGroupIndicator :icon="props.icon" />
     </slot>
   </RadioGroupItem>
 </template>

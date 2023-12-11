@@ -1,13 +1,13 @@
 <template>
   <DropdownMenuCheckboxItem v-bind="forwarded" :class="styles({ class: props.class })">
     <span className="absolute left-2 flex h-3.5 w-3.5 items-center justify-center text-primary">
-      <UIDropdownMenuItemIndicator icon="lucide:check" />
+      <UiDropdownMenuItemIndicator icon="lucide:check" />
     </span>
     <slot>
       <span v-if="title">{{ title }}</span>
     </slot>
     <slot name="shortcut">
-      <UIDropdownMenuShortcut v-if="shortcut">{{ shortcut }}</UIDropdownMenuShortcut>
+      <UiDropdownMenuShortcut v-if="shortcut">{{ shortcut }}</UiDropdownMenuShortcut>
     </slot>
   </DropdownMenuCheckboxItem>
 </template>

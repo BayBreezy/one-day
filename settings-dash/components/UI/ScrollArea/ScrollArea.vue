@@ -1,10 +1,10 @@
 <template>
   <ScrollAreaRoot v-bind="props" :class="styles({ class: props.class })">
-    <UIScrollAreaViewport>
+    <UiScrollAreaViewport>
       <slot></slot>
-    </UIScrollAreaViewport>
-    <UIScrollAreaScrollbar :orientation="orientation" />
-    <UIScrollAreaCorner />
+    </UiScrollAreaViewport>
+    <UiScrollAreaScrollbar :orientation="orientation" />
+    <UiScrollAreaCorner />
   </ScrollAreaRoot>
 </template>
 

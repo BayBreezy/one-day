@@ -1,9 +1,9 @@
 <template>
-  <UITooltipPortal :to="to">
+  <UiTooltipPortal :to="to">
     <TooltipContent v-bind="{ ...forwarded, ...$attrs }" :class="styles({ class: props.class })">
       <slot></slot>
     </TooltipContent>
-  </UITooltipPortal>
+  </UiTooltipPortal>
 </template>
 
 <script lang="ts" setup>

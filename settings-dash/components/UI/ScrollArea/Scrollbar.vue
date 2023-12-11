@@ -1,7 +1,7 @@
 <template>
   <ScrollAreaScrollbar v-bind="props" :class="styles({ orientation, class: props.class })">
     <slot></slot>
-    <UIScrollAreaThumb />
+    <UiScrollAreaThumb />
   </ScrollAreaScrollbar>
 </template>
 
