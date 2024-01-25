@@ -1,5 +1,5 @@
 <template>
-  <ScrollAreaRoot v-bind="props" :class="styles({ class: props.class })">
+  <ScrollAreaRoot v-bind="reactiveOmit(props, 'class')" :class="styles({ class: props.class })">
     <UiScrollAreaViewport>
       <slot></slot>
     </UiScrollAreaViewport>
@@ -15,7 +15,9 @@
   const props = withDefaults(
     defineProps<
       ScrollAreaRootProps & {
+        /** Orientation for scrolling */
         orientation?: "vertical" | "horizontal";
+        /** Custom class(es) to add to the parent */
         class?: any;
       }
     >(),

@@ -1,6 +1,8 @@
 <template>
   <UiSheetPortal :to="to">
-    <UiSheetOverlay />
+    <slot name="overlay">
+      <UiSheetOverlay />
+    </slot>
     <DialogContent
       :class="styles({ side, class: props.class })"
       v-bind="{ ...forwarded, ...$attrs }"
@@ -43,7 +45,10 @@
     }
   >();
   const emits = defineEmits<DialogContentEmits>();
-  const forwarded = useForwardPropsEmits(props, emits);
+  const forwarded = useForwardPropsEmits(
+    reactiveOmit(props, "icon", "title", "description", "class", "to", "side"),
+    emits
+  );
 
   const styles = tv({
     base: "fixed z-50 gap-4 bg-background p-6 shadow-lg transition ease-in-out data-[state=closed]:duration-300 data-[state=open]:duration-500 data-[state=open]:animate-in data-[state=closed]:animate-out",

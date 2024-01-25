@@ -1,5 +1,8 @@
 <template>
-  <AvatarFallback :class="styles({ class: props.class })" v-bind="props">
+  <AvatarFallback
+    :class="styles({ class: props.class })"
+    v-bind="reactiveOmit(props, 'class', 'fallback')"
+  >
     <slot>
       {{ fallback }}
     </slot>
@@ -12,7 +15,9 @@
 
   const props = defineProps<
     AvatarFallbackProps & {
+      /** The text to display inside th eavatar */
       fallback?: string;
+      /** Custom class(es) to add to the element */
       class?: any;
     }
   >();
