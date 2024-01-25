@@ -18,13 +18,16 @@
 
   const props = defineProps<
     DropdownMenuCheckboxItemProps & {
+      /** Custom class(es) to add to the parent */
       class?: any;
+      /** The shorttcut text to display */
       shortcut?: string;
+      /** The title text to display */
       title?: string;
     }
   >();
   const emits = defineEmits<DropdownMenuCheckboxItemEmits>();
-  const forwarded = useForwardPropsEmits(props, emits);
+  const forwarded = useForwardPropsEmits(reactiveOmit(props, "title", "shortcut", "class"), emits);
 
   const styles = tv({
     base: "relative flex cursor-pointer select-none items-center rounded-sm py-1.5 pl-8 pr-2 text-sm outline-none transition-colors focus:bg-accent focus:text-accent-foreground data-[disabled]:pointer-events-none data-[disabled]:opacity-50",

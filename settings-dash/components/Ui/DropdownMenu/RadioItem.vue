@@ -16,14 +16,17 @@
 
   const props = defineProps<
     DropdownMenuRadioItemProps & {
+      /** Custom class(es) to add to the parent */
       class?: any;
+      /** The icon to display */
       icon?: string;
+      /** The title text to display */
       title?: string;
     }
   >();
 
   const emits = defineEmits<DropdownMenuRadioItemEmits>();
-  const forwarded = useForwardPropsEmits(props, emits);
+  const forwarded = useForwardPropsEmits(reactiveOmit(props, "class", "icon", "title"), emits);
 
   const styles = tv({
     base: "relative flex cursor-pointer select-none items-center rounded-sm py-1.5 pl-8 pr-2 text-sm outline-none transition-colors focus:bg-accent focus:text-accent-foreground data-[disabled]:pointer-events-none data-[disabled]:opacity-50",
