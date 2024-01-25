@@ -53,7 +53,6 @@
     title: title.value,
     titleTemplate: "%s | One Day",
     description: description.value,
-
     ogTitle: title.value,
     ogDescription: description.value,
     ogImage: img,
